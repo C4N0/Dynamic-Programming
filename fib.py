@@ -9,7 +9,7 @@ def fib40(n):
 
 
 def fib_memo(n, memo):
-    # Memoisierung zur Reduzierung der 2**n Komplexität
+    # Reducing the 2**n complexity via memoization
     if n in memo:
         return memo[n]
     elif n <= 1:
