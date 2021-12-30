@@ -32,10 +32,11 @@ b = gridTravel_memo(20, 20, {})
 c = gridTravel_memo(30, 30, {})
 d = gridTravel_memo(40, 40, {})
 
-end = time.time()
 
-exact_time = end - start  # time in seconds needed to run the code
-print(exact_time)
+
 
 frame = pd.DataFrame({"10x10 Matrix": a, "20x20 Matrix": b, "30x30 Matrix": c, "40x40 Matrix": d},{"Possibilities"})
 print(frame)
+end = time.time()
+exact_time = end - start  # time in seconds needed to run the code
+print(exact_time)
