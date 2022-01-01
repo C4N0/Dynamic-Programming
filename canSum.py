@@ -30,3 +30,7 @@ def canSum_memo(targetSum, numbers, memo):
             return True
     memo[targetSum] = False # stores the Bool in the memo variable
     return False
+
+
+# print(canSum_memo(20, [11,13,90], {})) provides an example with arguments to see if the memoized code works
+# print(canSum(20, [11,13,90])) provides an example with arguments to see if the brute force algorithm works
